@@ -1,286 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio Marc Angelo Concepcion - Photographer, Gamer, Video/Photo Editor">
-    <meta name="keywords" content="photography, Gaming, VideoEditing">
-    <meta name="author" content="Marc Angelo Concepcion">
-    <title>Concepcion Marc Portfolio</title>
- <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Portfolio Marc Angelo Concepcion - Photographer, Gamer, Video/Photo Editor">
+<meta name="keywords" content="photography, Gaming, VideoEditing">
+<meta name="author" content="Marc Angelo Concepcion">
+<title>Concepcion Marc Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script type="importmap">{"imports":{"lenis":"https://cdn.jsdelivr.net/npm/lenis@1.3.19/dist/lenis.mjs"}}</script>
 </head>
 <body>
 
-    <div class="preloader" id="preloader">
-        <div class="preloader-content">
-            <div class="camera-icon">
-                <div class="lens"></div>
-            </div>
-            <p>Loading Portfolio...</p>
-        </div>
+<div id="pre" role="status" aria-label="Loading">
+  <div class="lab brand display">Marc Concepcion</div>
+  <div class="lab count display"><span id="cnt">0</span><i>%</i></div>
+</div>
+
+<header class="site">
+  <nav aria-label="Primary">
+    <a class="logo" href="#top"><b>MC</b><span>Marc Concepcion</span></a>
+    <ul class="links">
+      <li><a href="#story">About</a></li>
+      <li><a href="#work">Portfolio</a></li>
+      <li><a href="#impact">At a glance</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><i></i><i></i><i></i></button>
+  </nav>
+  <div id="menu" aria-hidden="true">
+    <a href="#story" style="--i:0">About</a>
+    <a href="#work" style="--i:1">Portfolio</a>
+    <a href="#impact" style="--i:2">At a glance</a>
+    <a href="#education" style="--i:3">Education</a>
+    <a href="#contact" style="--i:4">Contact</a>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section id="top">
+  <div class="hero-top">
+    <h2 class="roles" id="roles">
+      <span class="ln" style="--i:0"><span>Gamer</span></span>
+      <span class="ln" style="--i:1"><span>Photographer</span></span>
+      <span class="ln" style="--i:2"><span>Video Editor</span></span>
+      <span class="ln" style="--i:3"><span>BSIT Student</span></span>
+    </h2>
+    <p class="hero-desc h-fade" id="hdesc">Gamer and video/photo editor from Mamburao, Occidental Mindoro. OMSU BSIT student capturing real moments and building fun projects.</p>
+  </div>
+
+  <div class="portrait">
+    <div class="liq bare" data-liquid="30" style="position:absolute;inset:0"><img src="Assets/images/portrait-cutout.png" alt="Marc Angelo Concepcion" style="pointer-events:auto"></div>
+  </div>
+  <div class="gradbase"></div>
+
+  <h1 class="name" id="name" aria-label="Marc Angelo Concepcion">
+    <span class="ln" data-letters="Marc" data-b="0" aria-hidden="true"></span>
+    <span class="ln" data-letters="Concepcion" data-b="240" aria-hidden="true"></span>
+  </h1>
+  <div class="cue h-fade" id="cue">Scroll to enter</div>
+</section>
+
+<!-- MARQUEE -->
+<section class="marquee" aria-label="What I do">
+  <div class="track" id="track"></div>
+</section>
+
+<!-- STORY / ABOUT -->
+<section id="story" class="sec">
+  <div class="story">
+    <div class="l">
+      <div class="eyebrow">About Me</div>
+      <h2 class="hd sp" data-split>Gamer &amp; Video/Photo Editor</h2>
+      <p class="lead rv">Hi! Im Marc Angelo Concepcion, a passionate gamer and video/photo editor based in Mamburao, Occidental Mindoro. I study at Occidental Mindoro State University as a BSIT 3B student. With over 7 years of experience in Video editing and 4 years of photography along side with gaming, I focus in capturing moments that tell what the people wants with some accuracy in it. My work spans across Video editing series, Gameplay videos, and personal project for my friends.</p>
+      <div class="quote rv" style="--d:120ms">
+        <div class="face"><img src="Assets/images/image profile.png" alt="Marc Concepcion" loading="lazy"></div>
+        <p>“Life is weather-weather lang”</p>
+      </div>
     </div>
-
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home" id="nav-logo-text">Home</a>
-
-            </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li><a href="#education-awards" class="nav-link">Education</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="nav-toggle" id="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
+    <div class="r">
+      <ul class="facts">
+        <li class="rv" style="--d:0ms"><span class="n">7+ yrs</span><div><h3>Video editing</h3><p>Video editing series, gameplay videos, and personal projects for friends.</p></div></li>
+        <li class="rv" style="--d:90ms"><span class="n">4 yrs</span><div><h3>Photography</h3><p>Capturing real moments, from portraits and night landscapes to close-ups.</p></div></li>
+        <li class="rv" style="--d:180ms"><span class="n">Play</span><div><h3>Gaming</h3><p>Hours of gameplay that inspire much of my creative work.</p></div></li>
+        <li class="rv" style="--d:270ms"><span class="n">OMSC</span><div><h3>BSIT student</h3><p>Studying at Occidental Mindoro State College, building fun projects along the way.</p></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
 
 
-    <section id="home" class="hero">
-        <div class="hero-animated-bg"></div>
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1 class="hero-title">
-                <span class="title-line">Concepcion</span>
-                <span class="title-line highlight">Marc Angelo</span>
-            </h1>
-            <p class="hero-subtitle">OMSC BSIT 3B Student</p>
-            <div class="hero-buttons">
-                <a href="#portfolio" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-secondary">Contacts</a>
-            </div>
-        </div>
-        <div class="hero-scroll">
-            <span>Scroll Down</span>
-            <div class="scroll-line"></div>
-        </div>
-    </section>
+<section id="work" class="sec">
+  <div class="head-row">
+    <div>
+      <div class="eyebrow">My Portfolio</div>
+      <h2 class="hd sp" data-split>The work, across every hobby.</h2>
+    </div>
+    <div class="tag" id="wcount">12 / Works</div>
+  </div>
+  <p class="lead rv" style="max-width:56ch">A collection of works across my different hobbies that i mentioned, along with some of my school related works.</p>
+  <div class="filters rv" id="filters">
+    <button class="act" data-f="all">All</button>
+    <button data-f="Photography">Photography</button>
+    <button data-f="VideoEditing">Video Editing</button>
+    <button data-f="Gaming">Gaming</button>
+    <button data-f="School">School Works</button>
+  </div>
+  <ul class="grid" id="grid"></ul>
+  <div class="more"><button class="btn" id="more">Load More</button></div>
+</section>
 
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2 class="section-title">About Me</h2>
-                    <h3 class="about-subtitle">Gamer & Video/Photo Editor</h3>
-                    <p class="about-description">
-                        Hi! Im Marc Angelo Concepcion, a passionate gamer and video/photo editor based in Mamburao, Occidental Mindoro.
-                        I study at Occidental Mindoro State College as a BSIT 3B student.
-                        With over 7 years of experience in Video editing and 4 years of photography along side with gaming, I focus in capturing moments 
-                        that tell what the people wants with some accuracy in it. My work spans across Video editing series, Gameplay videos, 
-                        and personal project for my friends.
-                    </p>
 
-                    <div class="about-stats" style="display: flex; overflow-x: auto; gap: 1.5rem; padding-bottom: 1rem;">
-                        <div class="stat" style="min-width: 150px; flex: 0 0 auto;">
-                            <h4>2C</h4>
-                            <p>Year & Section</p>
-                        </div>
-                        <div class="stat" style="min-width: 150px; flex: 0 0 auto;">
-                            <h4>19 years</h4>
-                            <p>Age</p>
-                        </div>
-                        <div class="stat" style="min-width: 220px; flex: 0 0 auto;">
-                            <h4>Photography, Video/Photo Editing, Gaming</h4>
-                            <p>Hobbies</p>
-                        </div>
-                    </div>
-                    <a href="#contact" class="btn btn-primary">Contact Me</a>
-                </div>
-                <div class="about-image">
-                    <img src="Assets/images/image profile.png" alt="Marc Concepcion - Gamer & Video/Photo Editor" loading="lazy">
-                    <div class="about-image-overlay">
-                        <p>"Life is weather-weather lang"</p>
-                        <!-- <p>"Photography is the art of frozen time sabi nila"</p> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="impact" class="sec">
+  <div class="eyebrow">At a glance</div>
+  <h2 class="hd sp" data-split>The short version.</h2>
+  <dl class="stats">
+    <div class="stat rv" style="--d:0ms"><dd>2C</dd><dt>Year &amp; Section</dt></div>
+    <div class="stat rv" style="--d:110ms"><dd>19</dd><dt>Years old</dt></div>
+    <div class="stat rv" style="--d:220ms"><dd>7+</dd><dt>Years of video editing</dt></div>
+    <div class="stat rv" style="--d:330ms"><dd>4</dd><dt>Years of photography</dt></div>
+  </dl>
+  <p class="lead rv" style="margin-top:3rem">Hobbies: Photography, Video/Photo Editing, Gaming</p>
+</section>
 
-    <section id="portfolio" class="portfolio">
 
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">My Portfolio</h2>
-                <p class="section-subtitle">A collection of works across my different hobbies that i mentioned, along with some of my school related works.</p>
-            </div>
-            
-            <div class="portfolio-filters">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="Photography">Photography</button>
-                <button class="filter-btn" data-filter="VideoEditing">Video Editing</button>
-                <button class="filter-btn" data-filter="Gaming">Gaming</button>
-                <button class="filter-btn" data-filter="School">School Works</button>
-            </div>
-            
-            <div class="portfolio-grid" id="portfolio-grid">
+<section id="education" class="sec">
+  <div class="eyebrow">Education</div>
+  <h2 class="hd sp" data-split>Academic background.</h2>
+  <div class="edu">
+    <ul class="sel" id="sel">
+      <li><button class="act" data-i="0"><span class="i">01</span><span class="t"><span class="nm">MCS</span><span class="rl">Mamburao Central School</span></span><span class="rule"></span></button></li>
+      <li><button data-i="1"><span class="i">02</span><span class="t"><span class="nm">WEMA</span><span class="rl">West Mindoro Academy</span></span><span class="rule"></span></button></li>
+      <li><button data-i="2"><span class="i">03</span><span class="t"><span class="nm">OMSU</span><span class="rl">Occidental Mindoro State University</span></span><span class="rule"></span></button></li>
+    </ul>
+    <div class="panel">
+      <blockquote>
+        <p id="ptitle"></p>
+        <footer id="pfoot"></footer>
+      </blockquote>
+      <div class="liq pic rv" id="pic" data-liquid="22" style="--y:0px"><img id="pimg" src="Assets/images/MCS.jpg" alt="MCS School"></div>
+    </div>
+  </div>
+</section>
 
-            </div>
-            
-            <div class="portfolio-load-more">
-                <button class="btn btn-secondary" id="load-more">Load More</button>
-            </div>
-        </div>
-    </section>
+<!-- CONTACT -->
+<footer id="contact">
+  <div class="eyebrow">Get In Touch</div>
+  <h2 class="hd sp" data-split>Want to collaborate or just connect?</h2>
+  <p class="lead rv">Have questions about my work, want to collaborate, or just want to connect? Reach out and I'll get back to you soon!</p>
+  <a class="mail" href="mailto:angeloconcepcionmarc@gmail.com"><span>angeloconcepcionmarc@gmail.com</span><em>↗</em></a>
+  <dl class="details">
+    <div><dt>Phone</dt><dd>Unavailable</dd></div>
+    <div><dt>Location</dt><dd>Mamburao Occidental Mindoro</dd></div>
+  </dl>
+  <div class="bar">
+    <div class="a">
+      <p class="sig">Marc Angelo Concepcion</p>
+      <p class="sub">Gamer, video/photo editor, and BSIT 3B student passionate about digital arts.</p>
+    </div>
+    <nav class="b" aria-label="Social"><ul class="soc">
+      <li><a href="https://ig.me/m/Marc.Ange1o.Concepcion/" target="_blank" rel="noreferrer noopener">Instagram</a></li>
+      <li><a href="http://m.me/marcc.concepcion/" target="_blank" rel="noreferrer noopener">Facebook</a></li>
+      <li><a href="https://discord.com/" target="_blank" rel="noreferrer noopener">Discord</a></li>
+    </ul></nav>
+    <div class="c">
+      <p class="copy">&copy; 2026 MC.CO</p>
+      <div class="flinks"><a href="#top">Home</a><a href="#story">About</a><a href="#work">Portfolio</a><a href="#contact">Contact</a></div>
+    </div>
+  </div>
+</footer>
+</main>
 
-    <section id="education-awards" class="education-awards">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Education</h2>
-                <p class="section-subtitle">Academic background</p>
-            </div>
-            
-            <div class="education-awards-slider">
-                <div class="slider-track" id="slider-track">
-                 
-                    <div class="slider-item">
-                        <div class="slider-img-wrapper">
-                            <img src="Assets/images/MCS.jpg" alt="MCS School" class="school-img" loading="lazy">
-                        </div>
-                        <h3>MCS (Mamburao Central School)</h3>
-                        <p><strong>Graduated:</strong> 2018</p>
-                    </div>
-                    
-                    <div class="slider-item">
-                        <div class="slider-img-wrapper">
-                            <img src="Assets/images/WEMA.jpg" alt="WEMA School" class="school-img" loading="lazy">
-                        </div>
-                        <h3>WEMA (West Mindoro Academy)</h3>
-                        <p><strong>Graduated:</strong> 2024</p>
-                    </div>
-                    
-                    <div class="slider-item">
-                        <div class="slider-img-wrapper">
-                            <img src="Assets/images/OMSCG.jpg" alt="OMSC School" class="school-img" loading="lazy">
-                        </div>
-                        <h3>OMSC (Occidental Mindoro State College)</h3>
-                        <p><strong>Status:</strong> BSIT 2C Student</p>
-                    </div>
-                </div>
-           
-                <button class="slider-btn slider-prev" id="slider-prev" aria-label="Previous">&#10094;</button>
-                <button class="slider-btn slider-next" id="slider-next" aria-label="Next">&#10095;</button>
-            </div>
-        </div>
+<div id="lb" role="dialog" aria-modal="true" aria-label="Preview"><button id="lbx">Close</button><div class="stage" id="stage"></div><p id="lbcap"></p></div>
 
-<!-- slide code (Fragile dont touch) -->
-
-    <script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const track = document.getElementById("slider-track");
-        const prevBtn = document.getElementById("slider-prev");
-        const nextBtn = document.getElementById("slider-next");
-
-        let index = 0; 
-        const slides = document.querySelectorAll(".slider-item");
-        const totalSlides = slides.length;
-
-        function updateSlider() {
-            const slideWidth = slides[0].offsetWidth;
-            track.style.transform = `translateX(${-index * slideWidth}px)`;
-            track.style.transition = "transform 0.5s ease-in-out";
-        }
-
-        nextBtn.addEventListener("click", () => {
-            if (index < totalSlides - 1) {
-                index++;
-            } else {
-                index = 0; 
-            }
-            updateSlider();
-        });
-
-        prevBtn.addEventListener("click", () => {
-            if (index > 0) {
-                index--;
-            } else {
-                index = totalSlides - 1; 
-            }
-            updateSlider();
-        });
-
-        
-        setInterval(() => {
-            nextBtn.click();
-        }, 3000); 
-    });
-    </script>
-
-<!-- end script dont touch -->
-
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h2 class="section-title">Get In Touch</h2>
-                    <p class="contact-description">Have questions about my work, want to collaborate, or just want to connect? Reach out and I'll get back to you soon!</p>
-                    
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">📧</div>
-                            <div class="contact-text">
-                                <h4>Email</h4>
-                               <a href="angeloconcepcionmarc@gmail.com">Marc Concepcion</a> 
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">📱</div>
-                            <div class="contact-text">
-                                <h4>Phone</h4>
-                                <p>Unavailable</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">📍</div>
-                            <div class="contact-text">
-                                <h4>Location</h4>
-                                <p>Pubication 03, Mamburao Occidental Mindoro</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="social-links">
-                        <a href="https://ig.me/m/Marc.Ange1o.Concepcion/" class="social-link">Instagram</a>
-                        <a href="http://m.me/marcc.concepcion/" class="social-link">Facebook</a>
-                        <a href="https://discord.com/" class="social-link">Discord</a>
-                    </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-left">
-                    <h3>Marc Angelo Concepcion</h3>
-                    <p>Gamer, video/photo editor, and BSIT 2C student passionate about digital arts.</p>
-                </div>
-                <div class="footer-right">
-                    <div class="footer-links">
-                        <a href="#home">Home</a>
-                        <a href="#about">About</a>
-                        <a href="#portfolio">Portfolio</a>
-                        <a href="#contact">Contact</a>
-                    </div>
-                    <div class="footer-social">
-                        <a href="https://www.instagram.com/marcc.concepcion/" aria-label="Instagram">📷</a>
-                        <a href="https://www.facebook.com/Marc.Ange1o.Concepcion/" aria-label="Facebook">📘</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 MC.CO OMSC Midterm project. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
- <script src="js/main.js"></script>
+<script type="module" src="js/main.js"></script>
 </body>
 </html>
