@@ -1,4 +1,4 @@
-# MarcConcepcion_Repository
+# MarcConcepcion_Potfolio
 Hi! I’m Marc Angelo Concepcion, a gamer and video/photo editor from Mamburao, Occidental Mindoro. I’m a BSIT 3B student at Occidental Mindoro State College. I’ve been editing videos for quite sometime now and taking photos. I love capturing real moments, building fun projects, and creating content for myself and my friends. Outside of editing, I spend a lot of time gaming, which inspires much of my creative work.
 
 Portfolio Sections: 
@@ -20,4 +20,4 @@ You can contact me through:
 Email: angeloconcepcionmarc@gmail.com
 or visit my portfolio and contact me there.
 
-ps. portfolio ui still broken (working on it)
+ps. portfolio Work In Progress
